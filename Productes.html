@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productes del Gimnas</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 5px 0 20px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #666;
+        }
+        .productes-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 productos por fila */
+            gap: 20px;
+            padding: 20px;
+        }
+        .producte {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .producte img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .producte h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .producte p {
+            font-size: 1rem;
+            color: #444;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GIMNAS ALE21</h1>
+        <p>Aquest son els productes que oferim als nostres alumnes, de la millor qualitat!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Menu_de_navegacio.html">Menu de navegacio</a></li>
+            <li><a href="Page1.html">Inici</a></li>
+            <li><a href="sobre_nosaltres.html">Sobre nosaltres</a></li>
+            <li><a href="productes.html">Productes del gimnas</a></li>
+            <li><a href="formulari_de_contacte.html">Formulari de contacte</a></li>
+        </ul>
+    </nav>
+
+    <div class="productes-container">
+        <div class="producte">
+            <img src="imatges/Guants.png" alt="Gunats de boxeig">
+            <h3>Guants de boxeig</h3>
+            <p>Preu: 45 Euros</p>
+        </div>
+        <div class="producte">
+            <img src="imatges/Casco.png" alt="Casc protector">
+            <h3>Casc protector</h3>
+            <p>Preu: 30 Euros</p>
+        </div>
+        <div class="producte">
+            <img src="imatges/vendas.png" alt="Vendes per les mans">
+            <h3>Vendes per les mans</h3>
+            <p>Preu: 10 Euros</p>
+        </div>
+        <div class="producte">
+            <img src="imatges/Conjunt.png" alt="Conjunt esportiu">
+            <h3>Conjunt esportiu</h3>
+            <p>Preu: 65 Euros</p>
+        </div>
+        <div class="producte">
+            <img src="imatges/mitjons.png" alt="Mitjons antilliscants">
+            <h3>Mitjons antilliscants</h3>
+            <p>Preu: 10 Euros</p>
+        </div>
+        <div class="producte">
+            <img src="imatges/sabates.png" alt="Sabates de boxeig">
+            <h3>Sabates de boxeig</h3>
+            <p>Preu: 25 Euros</p>
+        </div>
+        <div class="producte">
+            <img src="imatges/sac.png" alt="Sac de boxeig">
+            <h3>Sac de boxeig</h3>
+            <p>Preu: 120 Euros</p>
+        </div>
+        <div class="producte">
+            <img src="imatges/Mochilla.png" alt="Motxilla esportiva">
+            <h3>Motxilla esportiva</h3>
+            <p>Preu: 20 Euros</p>
+        </div>
+    </div>
+</body>
+</html>

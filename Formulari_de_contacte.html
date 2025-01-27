@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari de contacte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input, form select, form textarea, form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulari de contacte</h1>
+        <nav>
+            <a href="Menu_de_navegacio.html">Menu de navegacio</a>
+            <a href="Page1.html">Inici</a>
+            <a href="sobre_nosaltres.html">Sobre nosaltres</a>
+            <a href="Productes.html">Productes del gimnas</a>
+            <a href="Formulari_de_contacte.html">Formulari de contacte</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Contacta'ns</h2>
+        <p>Si tens qualsevol dubte o consulta sobre les nostres classes de boxa, omple el formulari següent i ens posarem en contacte amb tu tan aviat com sigui possible.</p>
+        <form action="enviar_formulari.php" method="POST">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" placeholder="Introdueix el teu nom" required>
+
+            <label for="email">Correu electrònic:</label>
+            <input type="email" id="email" name="email" placeholder="Introdueix el teu correu electrònic" required>
+
+            <label for="missatge">Missatge:</label>
+            <textarea id="missatge" name="missatge" rows="5" placeholder="Escriu el teu missatge aquí" required></textarea>
+
+            <label for="data">Data preferida:</label>
+            <input type="date" id="data" name="data" required>
+            </select>
+
+            <label for="telefon">Telèfon:</label>
+            <input type="tel" id="telefon" name="telefon" placeholder="Introdueix el teu número de telèfon" pattern="[0-9]{9}" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
